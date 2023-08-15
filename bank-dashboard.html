@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto">
+
+
+
+  <h1 class="text-6xl font-bold text-center m-10">
+    Let's get some <span class="text-indigo-500">Mmmmmmooooooney</span>
+  </h1>
+
+
+  <div class="grid grid-cols-3 gap-6 mt-20">
+    <div class="bg-green-600 rounded-lg p-5">
+        <div class="mx-auto bg-green-500 rounded-lg p-5">
+          <div class="mx-auto bg-green-400 rounded-lg p-5">
+            <h1 class="text-5xl text-white font-bold mb-10 mt-5">Cash in Hand</h1>
+            <h1 class="text-5xl text-white font-bold">$<span id="cashInHand">00</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="bg-purple-600 rounded-lg p-5">
+        <div class="mx-auto bg-purple-500 rounded-lg p-5">
+          <div class="mx-auto bg-purple-400 rounded-lg p-5">
+            <h1 class="text-5xl text-white font-bold mb-10 mt-5">Cash Withdraw</h1>
+            <h1 class="text-5xl text-white font-bold">$<span id="cashWithdraw">00</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="bg-pink-600 rounded-lg p-5">
+        <div class="mx-auto bg-pink-500 rounded-lg p-5">
+          <div class="mx-auto bg-pink-400 rounded-lg p-5">
+            <h1 class="text-5xl text-white font-bold mb-10 mt-5">Balance</h1>
+            <h1 class="text-5xl text-white font-bold">$<span id="cashBalance">1200</span></h1>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="grid grid-cols-2 gap-10 mt-20">
+    <div class="bg-pink-600 rounded-lg p-5">
+        <div class="mx-auto bg-pink-500 rounded-lg p-5">
+          <div class="mx-auto bg-pink-400 rounded-lg p-5">
+            <h1 class="text-5xl text-white font-bold mb-5 mt-5">Deposit your money</h1>
+            <input id="deposit-Amount-input-field" type="text" class="input input-bordered w-full mb-5" placeholder="Depost amount">
+            <button id="deposit-button" class="btn bg-secondary">Deposit</button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-pink-600 rounded-lg p-5">
+        <div class="mx-auto bg-pink-500 rounded-lg p-5">
+          <div class="mx-auto bg-pink-400 rounded-lg p-5">
+            <h1 class="text-5xl text-white font-bold mb-5 mt-5">Withdrawal Amount</h1>
+            <input type="text" class="input input-bordered w-full mb-5" placeholder="Depost amount">
+            <button id="withdraw-button" class="btn bg-warning">Withdraw</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="deposit.js"></script>
+</body>
+</html>
